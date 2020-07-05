@@ -5,7 +5,7 @@ import App from './app.js';
 
 function Main() {
   
-    return <App />;
+  return <App />;
 }
 
 const rootElement = document.getElementById('root');
