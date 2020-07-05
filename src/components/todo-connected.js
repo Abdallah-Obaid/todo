@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import TodoForm from './form.js';
 import TodoList from './list.js';
+import Alert from 'react-bootstrap/Alert';
 
 import './todo.scss';
 
@@ -18,11 +20,11 @@ const ToDo = () => {
       mode: 'cors',
       cache: 'no-cache',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(item)
+      body: JSON.stringify(item),
     })
       .then(response => response.json())
       .then(savedItem => {
-        setList([...list, savedItem])
+        setList([...list, savedItem]);
       })
       .catch(console.error);
   };
@@ -42,7 +44,7 @@ const ToDo = () => {
         mode: 'cors',
         cache: 'no-cache',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(item)
+        body: JSON.stringify(item),
       })
         .then(response => response.json())
         .then(savedItem => {
@@ -65,26 +67,27 @@ const ToDo = () => {
   useEffect(_getTodoItems, []);
 
   return (
-    <>
-      <header>
+    <><div>
+      <Alert color="success">
         <h2>
           There are {list.filter(item => !item.complete).length} Items To Complete
         </h2>
-      </header>
+      </Alert>
+    </div>
 
-      <section className="todo">
+    <section className="todo">
 
-        <div>
-          <TodoForm handleSubmit={_addItem} />
-        </div>
+      <div>
+        <TodoForm handleSubmit={_addItem} />
+      </div>
 
-        <div>
-          <TodoList
-            list={list}
-            handleComplete={_toggleComplete}
-          />
-        </div>
-      </section>
+      <div>
+        <TodoList
+          list={list}
+          handleComplete={_toggleComplete}
+        />
+      </div>
+    </section>
     </>
   );
 };

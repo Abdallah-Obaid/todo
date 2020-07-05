@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import TodoForm from './form.js';
 import TodoList from './list.js';
@@ -11,7 +12,7 @@ function ToDo (props) {
     item.complete = false;
     setList( [...listAll, item]);
     // console.log("itemitemitem",item);
-    localStorage.setItem('listAll', JSON.stringify( [...listAll, item]))
+    localStorage.setItem('listAll', JSON.stringify( [...listAll, item]));
   };
 
   const toggleComplete = id => {
@@ -25,53 +26,53 @@ function ToDo (props) {
 
   useEffect(()=> {
     let listView = JSON.parse(localStorage.getItem('listAll'))||[];
-       setList(listView);
-    }, []);
+    setList(listView);
+  }, []);
 
-    const handleDelete =(_id) =>{
-      // listAll.splice(1,1)
-      let listToDelete = [_id]
-      let result = listAll.filter( el => (-1 == listToDelete.indexOf(el._id)) );
-      localStorage.setItem('listAll', JSON.stringify( result))
-      console.log('arrarrarrarr',result)
-      setList(result);
-    }
-    const handleUpdate =(i) =>{
-      // listAll.splice(1,1)
-      let input = document.getElementsByName(i)[0].value;
-      listAll[i].text = input;
-      localStorage.setItem('listAll', JSON.stringify( listAll))
-      console.log('arrarrarrarr',listAll)
-      setList(listAll);
-      window.location.reload(true);
-    }
+  const handleDelete =(_id) =>{
+    // listAll.splice(1,1)
+    let listToDelete = [_id];
+    let result = listAll.filter( el => (-1 == listToDelete.indexOf(el._id)) );
+    localStorage.setItem('listAll', JSON.stringify( result));
+    console.log('arrarrarrarr',result);
+    setList(result);
+  };
+  const handleUpdate =(i) =>{
+    // listAll.splice(1,1)
+    let input = document.getElementsByName(i)[0].value;
+    listAll[i].text = input;
+    localStorage.setItem('listAll', JSON.stringify( listAll));
+    console.log('arrarrarrarr',listAll);
+    setList(listAll);
+    window.location.reload(true);
+  };
 
-    return (
-      <>
-        <header>
-          <h2>
+  return (
+    <>
+      <header>
+        <h2>
           There are {listAll.filter(item => !item.complete).length} Items To Complete
-          </h2>
-        </header>
+        </h2>
+      </header>
 
-        <section className="todo">
+      <section className="todo">
 
-          <div>
-            <TodoForm handleSubmit={addItem} />
-          </div>
+        <div>
+          <TodoForm handleSubmit={addItem} />
+        </div>
 
-          <div>
-            <TodoList
-              list={listAll}
-              handleComplete={toggleComplete}
-              handleDelete={handleDelete}
-              handleUpdate={handleUpdate}
-            />
-          </div>
-        </section>
+        <div>
+          <TodoList
+            list={listAll}
+            handleComplete={toggleComplete}
+            handleDelete={handleDelete}
+            handleUpdate={handleUpdate}
+          />
+        </div>
+      </section>
 
-      </>
-    );
+    </>
+  );
 }
 
 export default ToDo;
