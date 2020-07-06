@@ -6,13 +6,13 @@
 
 ### Links and Resources
 
-* [submission PR](https://github.com/Abdallah-401-advanced-javascript/resty/pull/5)
+* [submission PR](https://github.com/Abdallah-Obaid/todo/pull/1)
 <!-- * [travis](https://github.com/Abdallah-401-advanced-javascript/caps/pull/2/checks?check_run_id=775094621)ز -->
 <!-- * [ci/cd](https://github.com/Abdallah-401-advanced-javascript/caps/pull/2/checks?check_run_id=775094661) -->
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
 <!-- * [front-end application](https://abdallah-lab-00.herokuapp.com/)  -->
 ### Deployment:
-* [GitHub Page](https://abdallah-401-advanced-javascript.github.io/resty/)
+* [GitHub Page](https://abdallah-obaid.github.io/todo/)
 <!-- * [Netlify](https://stoic-jennings-e5b7bc.netlify.app/) -->
 
 ### Documentation
@@ -23,13 +23,14 @@
 <!-- #### `events.js`. -->
 
 ##### Exported Values and Methods
-`<Main/>` class, `<Footer/>` method,`<Header/>` method,`<Results/>` class, `<Routes/>` class
+`<form/>` function, `<Footer/>` function,`<Header/>` function,`<todo/>` function, `<list/>` function, `<todo-connected/>` function
 <!-- ###### `events.js`
 This is to require the event and use it in the other files. -->
 
 ### Setup
 
 #### `.env` requirements 
+SKIP_PREFLIGHT_CHECK=true
 <!-- PORT=3030 // not used yet
 storeName=AbuAlFalafel -->
 
