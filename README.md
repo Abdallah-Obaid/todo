@@ -23,13 +23,14 @@
 <!-- #### `events.js`. -->
 
 ##### Exported Values and Methods
-`<Main/>` class, `<Footer/>` method,`<Header/>` method,`<Results/>` class, `<Routes/>` class
+`<form/>` function, `<Footer/>` function,`<Header/>` function,`<todo/>` function, `<list/>` function, `<todo-connected/>` function
 <!-- ###### `events.js`
 This is to require the event and use it in the other files. -->
 
 ### Setup
 
 #### `.env` requirements 
+SKIP_PREFLIGHT_CHECK=true
 <!-- PORT=3030 // not used yet
 storeName=AbuAlFalafel -->
 
