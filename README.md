@@ -12,7 +12,7 @@
 <!-- - [back-end server url](http://xyz.com) (when applicable) -->
 <!-- * [front-end application](https://abdallah-lab-00.herokuapp.com/)  -->
 ### Deployment:
-* [GitHub Page](https://abdallah-401-advanced-javascript.github.io/resty/)
+* [GitHub Page](https://abdallah-obaid.github.io/todo/)
 <!-- * [Netlify](https://stoic-jennings-e5b7bc.netlify.app/) -->
 
 ### Documentation
