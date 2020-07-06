@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Abdallah-Obaid/todoprecache-manifest.860cc45620e239b05a051334c8ff7d8a.js"
+  "/todo/precache-manifest.6aafd300577c0a1eaa9546dff0b01803.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/Abdallah-Obaid/todoindex.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/todo/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
