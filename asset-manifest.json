@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Abdallah-Obaid/todostatic/css/main.b06360a0.chunk.css",
+    "main.js": "/Abdallah-Obaid/todostatic/js/main.77a60e8e.chunk.js",
+    "main.js.map": "/Abdallah-Obaid/todostatic/js/main.77a60e8e.chunk.js.map",
+    "runtime-main.js": "/Abdallah-Obaid/todostatic/js/runtime-main.0103d426.js",
+    "runtime-main.js.map": "/Abdallah-Obaid/todostatic/js/runtime-main.0103d426.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/Abdallah-Obaid/todostatic/css/2.af3c1da9.chunk.css",
+    "static/js/2.14b9b8b9.chunk.js": "/Abdallah-Obaid/todostatic/js/2.14b9b8b9.chunk.js",
+    "static/js/2.14b9b8b9.chunk.js.map": "/Abdallah-Obaid/todostatic/js/2.14b9b8b9.chunk.js.map",
+    "index.html": "/Abdallah-Obaid/todoindex.html",
+    "precache-manifest.860cc45620e239b05a051334c8ff7d8a.js": "/Abdallah-Obaid/todoprecache-manifest.860cc45620e239b05a051334c8ff7d8a.js",
+    "service-worker.js": "/Abdallah-Obaid/todoservice-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/Abdallah-Obaid/todostatic/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.b06360a0.chunk.css.map": "/Abdallah-Obaid/todostatic/css/main.b06360a0.chunk.css.map",
+    "static/js/2.14b9b8b9.chunk.js.LICENSE.txt": "/Abdallah-Obaid/todostatic/js/2.14b9b8b9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0103d426.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.14b9b8b9.chunk.js",
+    "static/css/main.b06360a0.chunk.css",
+    "static/js/main.77a60e8e.chunk.js"
+  ]
+}
